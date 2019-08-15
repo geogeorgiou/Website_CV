@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* used to remove the annoying chrome focus border */
+
+*focus {outline: none;}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Roboto','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow: scroll;
+}
+
+/* insta copy */
+
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+/*    font-weight: 500;*/
+}
+
+/*********************/
+/* REUSABLE */
+/*********************/
+
+/*
+a:link,
+a:active{
+    text-decoration: none;
+}
+
+a:hover,
+a:visited{
+    text-decoration: none;
+}
+*/
+
+.icon-big{
+    font-size: 280%;
+    margin-bottom: 20px;
+}
+
+.icon-small{
+    margin-right: 15px;
+/*    color: #555;*/
+/*    background-color: #555;*/
+}
+
+.emoji{
+/*    color: #555;*/
+}
+
+.delay-1 {
+animation-delay: .25s;
+}
+.delay-2 {
+animation-delay: .5s;
+}
+.delay-3 {
+animation-delay: .75s;
+}
+.delay-4 {
+animation-delay: 1s;
+}
+
+
+/*********************/
+/* BANNER SECTION */
+/*********************/
+
+.banner-section{
+    
+}
+
+.banner{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(img/bkg-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.top-bar{
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;    
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    color: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 20px;
+    padding: 12px 0 12px 50px;
+    text-transform: uppercase;
+    
+}
+
+.menu{
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;   
+    
+}
+
+.menu ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; 
+    
+    justify-content: center;
+    
+}
+
+.menu ul li{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.menu ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;    
+}
+
+.menu li a:link,
+.menu li a:visited{
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .2s;
+}
+
+.menu li a:hover,
+.menu li a:active{
+    border-bottom: 2px solid #1f90d6;
+}
+
+/*banner*/
+
+.banner-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15% 0;
+    
+}
+
+.banner-text-items{
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.banner-text-items h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+/*    text-transform: uppercase;*/
+}
+
+.banner-text-items p{
+    font-size: 20px;
+}
+
+/*********************/
+/* MAIN-CONTENT SECTION */
+/*********************/
+
+.main-content-section{
+    
+}
+
+
+.main-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0;
+    
+    
+}
+
+/*
+main-content js--about js--wp-1{
+    animation-delay: 5s;
+}
+*/
+
+.main-details{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-bottom: 3%;
+    width: 70%;
+    text-align: center;
+}
+
+.main-details h2{
+    padding-bottom: 2%;
+}
+
+/*********************/
+/* EDUCATION SECTION */
+/*********************/
+
+.education-section{
+/*    background-color: #f2f2f2;*/
+/*    padding: 6% 0;*/
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(img/education-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.education-experience{
+    
+    padding: 4% 5%;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+
+
+.education-experience--1{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    
+    padding: 4% 0 2% 0;
+}
+
+.education-experience--1,
+.education-experience--2,
+.education-experience--3,
+.education-experience--4{
+    margin-left: 5%;
+}
+
+.education-experience--1 ul,
+.education-experience--2 ul,
+.education-experience--3 ul,
+.education-experience--4 ul{
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 15%;
+}
+
+.education-experience--3 ul li,
+.education-experience--4 ul li{
+    margin-top: 12px;
+}
+
+.education-experience--2,
+.education-experience--3{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    
+    padding: 2% 0 2% 0;
+}
+
+.education-experience--4{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 2% 0 0 0;
+}
+
+
+
+/*********************/
+/* CODING SECTION */
+/*********************/
+
+.coding-section{
+    padding: 10% 5%;
+}
+
+.coding-languages{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.coding-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.web:hover,
+.web:active,
+.object-oriented:hover,
+.object-oriented:active,
+.databases:hover,
+.databases:active{
+    border-radius: 12px;
+    transform: scale(1.2);
+    background-color: #f2f2f2;
+    color: #1f90d6;
+    
+
+    transition: background-color 0.6s linear,color 0.6s, font-size 0.6s ease;
+
+}
+
+
+.web,
+.object-oriented,
+.databases{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.6s ease;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+
+
+.web-skills,
+.object-oriented-skills,
+.databases-skills{
+    margin-top: 30px;
+}
+
+
+
+.web-skills li,
+.object-oriented-skills li,
+.databases-skills li{
+    font-size: 22px;
+    margin-top: 16px;
+    list-style: none;
+    
+}
+
+
+/*********************/
+/* CONTACT SECTION */
+/*********************/
+
+
+.contact-section{
+    background-color: #000;
+}
+
+
+
+.contact{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    
+    background-color:cornflowerblue;
+    
+    padding: 5% 0 10% 0;
+}
+
+
+.contact h2{
+    padding: 5% 0 3% 0;
+}
+
+
+/******************************************/
+/****CONTACT CARD*****/
+/******************************************/
+
+.contact__card{
+    
+    
+/*
+    width: 900px;
+    height: auto;
+*/
+    width: 900px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    
+    
+    
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,.8);
+}
+
+.contact__card__hero{
+    flex: 0 0 40%;
+}
+
+.contact__card__img{
+    width: 100%;
+    display: block;
+}
+
+.contact__card__content{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+    padding-left: 50px;
+
+    background-color: #fff8f0;
+}
+
+.contact__card__content__title{
+
+    font-size: 18px;
+}
+
+.contact__card__content__heading{
+/*   malon oxi */
+}
+
+.contact__card__description{
+    
+}
+
+.contact__card__description ul{
+    margin-top: 15px;
+    list-style: none;
+    
+}
+
+.contact__card__description ul li{
+    margin-bottom: 15px;
+}
+
+
+
+.contact__card__college{
+    padding: 1% 0;
+/*    margin-bottom: 1% 0;*/
+    background-color: #fff4e4;
+    
+    flex: 0 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*    text-align: center;*/
+/*    flex-basis: 30px;*/
+    font-size: 20px;
+    font-weight: 500;
+    writing-mode: vertical-rl;
+}
+
+.contact__card__college_logo{
+/*    flex: 1;*/
+    width: 40px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+/*********************/
+/* FOOTER */
+/*********************/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    
+}
+
+.coding-and-socials{
+    
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.coding-technologies,
+.social-links{
+    flex: 1;
+    display: flex;
+    padding: 10px 0;
+    
+}
+
+.coding-technologies{
+    justify-content: flex-start;
+}
+
+.social-links{
+    justify-content: flex-end;
+}
+
+/*
+.social-links:after{
+    padding-right: 0;
+}
+*/
+
+.coding-technologies,
+.social-links{    
+    list-style: none;
+}
+
+.copyright{
+    
+    display: flex;
+    justify-content: center;
+    font-size: 80%;
+    padding: 1% 0;
+    text-align: center;
+}
+
+.coding-technologies li:hover,
+.coding-technologies li:active,
+.social-links li:hover,
+.social-links li:active{
+    transform:scale(1.8);
+    transition: color 0.6s, font-size 0.6s ease;
+}
+
+.coding-technologies li:hover,
+.coding-technologies li:active{
+    color: antiquewhite;
+}
+
+
+.coding-technologies li,
+.social-links li{
+    transition: 0.6s ease;
+}
+
+
+.ion-logo-html5,
+.ion-logo-css3,
+.ion-logo-javascript,
+.ion-logo-github,
+.ion-logo-linkedin,
+.ion-logo-google{
+  -webkit-transition:-webkit-transform .2s color 0.2s ease; transition:-webkit-transform .2s color 0.2s ease; 
+  transition:transform .2s color 0.2s ease; 
+  transition:transform .2s color 0.2s ease, -webkit-transform .2s color 0.2s ease;
+    
+}
+
+.ion-logo-github:hover{
+    color: #6e5494;
+}
+
+.ion-logo-linkedin:hover{
+    color: #0077b5;
+}
+
+.ion-logo-google:hover{
+    color: #ea4335;
+}
+
+/**************************/
+/*SCRIPT CSS*/
+/**************************/
+
+.js--fadeInDown-CV{
+    opacity: 0;    
+}
+
+.js--fadeInDown-CV.animated{
+    -webkit-animation-delay: .2s; 
+    animation-delay: .2s;
+    opacity: 1;
+}
+
+.js--mscroll-to-main-details{
+    opacity: 0;
+}
+
+/*both classes at the same time!*/
+.js--mscroll-to-main-details.animated{
+    animation-delay: .2s;
+    opacity: 1;
+}
+
+.js--mscroll-to-coding-lang{
+    opacity: 0;
+}
+
+.js--mscroll-to-coding-lang.animated{
+    animation-delay: .2s;
+    opacity: 1;
+}
+
