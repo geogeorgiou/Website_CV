@@ -32,24 +32,12 @@ html{
 a{
     text-decoration: none;
     color: #555;
-/*    font-weight: 500;*/
 }
 
 /*********************/
 /* REUSABLE */
 /*********************/
 
-/*
-a:link,
-a:active{
-    text-decoration: none;
-}
-
-a:hover,
-a:visited{
-    text-decoration: none;
-}
-*/
 
 .icon-big{
     font-size: 280%;
@@ -157,9 +145,7 @@ animation-delay: 1s;
 
 .menu li a:link,
 .menu li a:visited{
-    border-bottom: 2px solid 
-
-transparent;
+    border-bottom: 2px solid transparent;
     transition: border-bottom .2s;
 }
 
@@ -222,12 +208,6 @@ transparent;
     
     
 }
-
-/*
-main-content js--about js--wp-1{
-    animation-delay: 5s;
-}
-*/
 
 .main-details{
     -webkit-box-flex: 1;
@@ -353,13 +333,11 @@ main-content js--about js--wp-1{
 .databases:hover,
 .databases:active{
     border-radius: 12px;
-    transform: scale(1.2);
+    transform: scale(1.3);
     background-color: #f2f2f2;
     color: #1f90d6;
-    
 
     transition: background-color 0.6s linear,color 0.6s, font-size 0.6s ease;
-
 }
 
 
@@ -370,6 +348,7 @@ main-content js--about js--wp-1{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     transition: 0.6s ease;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -412,9 +391,12 @@ main-content js--about js--wp-1{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+/*    flex: 1;*/
     
     flex-direction: column;
     align-items: center;
+/*    flex-flow: row wrap;*/
+    
     
     background-color:cornflowerblue;
     

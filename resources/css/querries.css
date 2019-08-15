@@ -2,14 +2,29 @@
 
 @media only screen and (max-width: 1200px){
 
-/*
-	.hero-text-box {
-		width:100%;
-		padding: 0 2%;
-	}
-	
-	.row { padding: 0 2%; }
-*/
+    
+    .main-content-section{
+    
+    }
+
+
+    .main-content{
+        padding: 5% 0;
+    }
+
+    .main-details{
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding-bottom: 5%;
+        width: 70%;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .main-details h2{
+        padding-bottom: 4%;
+    }
 
 }
 
@@ -18,66 +33,158 @@
 
 @media only screen and (max-width: 1023px){
 
-/*
-	 start changing values to smaller ones 20px -> 18px and 80px - 60px 
-	body { font-size: 18px; }
+    
 
-	section { padding: 60px 0; }
+    .logo{
+        padding: 10px 0 10px 40px;
+    }
 
-	 increase width size to 80 since it looks wierd 
-	.long-copy{
-		width: 80%;
-		margin-left: 10%;
-	}
+    .menu ul{
+        margin-top: 25px;
+    }
 
-	
-	
-	.steps-box{
-		margin-top: 10px;
-	}
+    .menu ul li a{
+        font-size: 18px;
+    }
 
-	.steps-box:last-child{
-		margin-top: 10px;
-	}
-	
-	.works-step{
-		margin-bottom: 40px;
-	}
+    /*banner*/
 
-	.works-step:last-of-type{
-		margin-bottom: 60px;
-	}
+    .banner-text{
+         padding: 15% 0;
+    }
 
-	 bigger image 
-	.app-screen { width: 50% }
+    .banner-text-items{
+        width: 70%;
+    }
 
-	
-	.icon-small {
-		width: 17px;
-		margin-right: 5px;
-	}
+    .banner-text-items h2{
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
 
-	.city-feature{
-		font-size: 90%;
-	}
+    .banner-text-items p{
+        font-size: 18px;
+    }    
 
-	
+    /*main content*/
+    
+    .main-content{
+     padding: 5% 0;
+    }
 
-	.plan-box {
-		width: 100%;
-		margin-left: 0%;
-	}
+    .main-details{
+        width: 75%;
+        font-size: 18px;
+        line-height: 130%;
+    }
+    
+/*    education section*/
 
-	.plan-price{
-		font-size: 250%;
-	}
+    .education-experience h2{
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+    
+    .education-experience{
+        padding: 10% 5%;
 
-	
+    }
 
-	.contact-form {
-		width: 80%;
-	}
-*/
+
+    .education-experience--1{
+        padding: 4% 0 2% 0;
+    }
+
+    .education-experience--1,
+    .education-experience--2,
+    .education-experience--3,
+    .education-experience--4{
+        font-size: 18px;
+    }
+
+    /* coding section */
+    
+    .coding-header h2{
+        font-size: 1em;
+    }
+
+    .web:hover,
+    .web:active,
+    .object-oriented:hover,
+    .object-oriented:active,
+    .databases:hover,
+    .databases:active{
+        border-radius: 10px;
+        transform: scale(1.2);
+    }
+
+    .web-skills li,
+    .object-oriented-skills li,
+    .databases-skills li{
+        font-size: 18px;
+    }
+    
+    /*contact section*/
+
+    .contact{
+        flex-flow: row wrap;
+    }
+
+
+    .contact h2{
+        padding: 2% 0 3% 0;
+    }
+    
+    .contact__card{
+    
+        width: 700px;
+
+/*        align-self: center;*/
+        flex-flow: row wrap;
+
+
+
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 30px 80px 10px rgba(0,0,0,.8);
+    }
+
+    .contact__card__hero{
+        flex: 0 0 40%;
+    }
+
+    .contact__card__content{
+        margin-bottom: 0;
+    }
+
+    .contact__card__content__title{
+
+        font-size: 16px;
+    }
+
+    
+    .contact__card__description ul{
+        margin-top: 10px;
+        list-style: none;
+
+    }
+
+    .contact__card__description ul li{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .contact__card__college{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .contact__card__college_logo{
+        width: 20px;
+    }
+    
 }
 
 /* Small phones to small tablets 481 - 767 px */
