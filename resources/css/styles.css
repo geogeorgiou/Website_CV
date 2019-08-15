@@ -99,6 +99,8 @@ animation-delay: 1s;
     background-size: cover;
 }
 
+/* main navi */
+
 .top-bar{
     background-color: #000;
     display: -webkit-box;
@@ -155,7 +157,9 @@ animation-delay: 1s;
 
 .menu li a:link,
 .menu li a:visited{
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid 
+
+transparent;
     transition: border-bottom .2s;
 }
 
@@ -163,6 +167,8 @@ animation-delay: 1s;
 .menu li a:active{
     border-bottom: 2px solid #1f90d6;
 }
+
+
 
 /*banner*/
 
@@ -211,6 +217,8 @@ animation-delay: 1s;
     flex-direction: column;
     align-items: center;
     padding: 5% 0;
+    height: 100vh;
+    width: 100%;
     
     
 }
@@ -226,7 +234,8 @@ main-content js--about js--wp-1{
     -ms-flex: 1;
     flex: 1;
     padding-bottom: 3%;
-    width: 70%;
+    width: 60%;
+    line-height: 140%;
     text-align: center;
 }
 
@@ -320,6 +329,8 @@ main-content js--about js--wp-1{
 /*********************/
 
 .coding-section{
+    height: 100vh;
+    width: 100%;
     padding: 10% 5%;
 }
 
@@ -392,6 +403,7 @@ main-content js--about js--wp-1{
 
 .contact-section{
     background-color: #000;
+    
 }
 
 
@@ -407,6 +419,8 @@ main-content js--about js--wp-1{
     background-color:cornflowerblue;
     
     padding: 5% 0 10% 0;
+    height: 100vh;
+    width: 100%;
 }
 
 

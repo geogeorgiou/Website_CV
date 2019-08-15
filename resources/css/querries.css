@@ -1,0 +1,102 @@
+/* Big tablet to 1200 px (widths: smaller than the defined 1140 row) */
+
+@media only screen and (max-width: 1200px){
+
+/*
+	.hero-text-box {
+		width:100%;
+		padding: 0 2%;
+	}
+	
+	.row { padding: 0 2%; }
+*/
+
+}
+
+
+/* Small tablet to big tablet 768 - 1023 px */
+
+@media only screen and (max-width: 1023px){
+
+/*
+	 start changing values to smaller ones 20px -> 18px and 80px - 60px 
+	body { font-size: 18px; }
+
+	section { padding: 60px 0; }
+
+	 increase width size to 80 since it looks wierd 
+	.long-copy{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	
+	
+	.steps-box{
+		margin-top: 10px;
+	}
+
+	.steps-box:last-child{
+		margin-top: 10px;
+	}
+	
+	.works-step{
+		margin-bottom: 40px;
+	}
+
+	.works-step:last-of-type{
+		margin-bottom: 60px;
+	}
+
+	 bigger image 
+	.app-screen { width: 50% }
+
+	
+	.icon-small {
+		width: 17px;
+		margin-right: 5px;
+	}
+
+	.city-feature{
+		font-size: 90%;
+	}
+
+	
+
+	.plan-box {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	.plan-price{
+		font-size: 250%;
+	}
+
+	
+
+	.contact-form {
+		width: 80%;
+	}
+*/
+}
+
+/* Small phones to small tablets 481 - 767 px */
+
+@media only screen and (max-width: 767px){
+	
+	
+
+	
+}
+
+/* Small phones 0 - 480 px */
+
+@media only screen and (max-width: 480px){
+
+/*
+	section { padding: 25px 0; }
+	
+	.contact-form { width: 100%; }
+*/
+
+}
